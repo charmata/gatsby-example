@@ -29,8 +29,14 @@ def lambda_handler(event, context):
         with zipfile.ZipFile(site_zip) as myzip:
             for nm in myzip.namelist():
                 obj = myzip.open(nm)
-                site_bucket.upload_fileobj(obj, nm,
-                    ExtraArgs={'ContentType': mimetypes.guess_type(nm)[0]})
+                file_type = mimetypes.guess_type(nm)[0]
+                
+                if file_type == None:
+                    site_bucket.upload_fileobj(obj, nm)
+                else:
+                    site_bucket.upload_fileobj(obj, nm,
+                        ExtraArgs={'ContentType': file_type})
+                
                 site_bucket.Object(nm).Acl().put(ACL='public-read')
                 
         print('Job done!')
