@@ -4,9 +4,13 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.4.1",
     "gatsby": "latest",
     "gatsby-plugin-material-ui": "latest",
     "gatsby-plugin-react-helmet": "latest",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^5.1.0",
+    "markdown-to-jsx": "^6.10.3",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest"
