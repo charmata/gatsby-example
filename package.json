@@ -3,17 +3,17 @@
   "version": "4.0.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "latest",
+    "@material-ui/core": "^4.4.2",
     "@material-ui/icons": "^4.4.1",
-    "gatsby": "latest",
-    "gatsby-plugin-material-ui": "latest",
-    "gatsby-plugin-react-helmet": "latest",
+    "gatsby": "^2.15.18",
+    "gatsby-plugin-material-ui": "^2.1.6",
+    "gatsby-plugin-react-helmet": "^3.1.7",
     "html-loader": "^0.5.5",
     "markdown-loader": "^5.1.0",
     "markdown-to-jsx": "^6.10.3",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-helmet": "latest"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1"
   },
   "scripts": {
     "develop": "gatsby develop",
